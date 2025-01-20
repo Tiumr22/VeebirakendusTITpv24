@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Muusika ankeet</title>
+    <link rel="stylesheet" href="ankeetstyle.css">
+</head>
+<body>
+<h1>Muusika ankeet</h1>
+<form action="#">
+    <!--tekst kast-текстовый ящик-->
+    <label for="nimi">Eesnimi</label>
+    <input type="text" id="nimi" placeholder="Kirjuta nimi">
+    <br>
+    <strong>Vali rühm:</strong>
+    <br>
+    <!--radio nupp-->
+    <input type="radio" id="titpv24" name="ryhm" checked>
+    <label for="titpv24">TITpv24</label>
+    <br>
+    <br>
+    <input type="radio" id="logitpv24" name="ryhm">
+    <label for="logitpv24">LOGITpv24</label>
+    <br>
+    <input type="radio" id="tarpv24" name="ryhm">
+    <label for="tarpv24">TARpv24</label>
+    <br>
+
+    <input type="radio" id="krrpv24" name="ryhm">
+    <label for="krrpv24">KRRpv24</label>
+    <br><br>
+    <!--checkbox-->
+    <strong>Millist muusikat sa kuulad?</strong>
+    <br>
+    <input type="checkbox" id="rock">
+    <label for="rock">Rock</label>
+    <br>
+            <input type="checkbox" id="bluus">
+    <label for="bluus">Bluus</label>
+    <br>
+    <!--värvi valik-->
+    <label for="varv">Mis värvi on rock-muusika?</label>
+    <input type="color" id="varv">
+    <br>
+    <!--ripploend - выподающий список-->
+    <label for="tund">
+        Mitu tundi päevas sa kuulad muusikat?
+    </label>
+    <select name="tund" id="tund">
+    <option value="15 min">15 min</option>
+    <option value="1 tund">1 tund</option>
+    </select>
+</form>
+</body>
+</html>
