@@ -1,0 +1,65 @@
+
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormis lugemine</title>
+    <script src="vormSkript.js"></script>
+    <link rel="stylesheet" href=styles.css>
+</head>
+<body>
+<h1>Vormist lugimine JS abil</h1>
+<form action="">
+    <label for ="nimi">Sisesta nimi</label>
+    <br>
+    <input type="text" name="nimi" id="nimi">
+</form>
+<br>
+<label for="pnimi">Sisesta perekonanimi</label>
+<br>
+<input type="text" name="pnimi" id="pnimi">
+<br>
+<label for="varv">Vali vastuse värv</label>
+<input type="color" id="varv">
+<br>
+<label for="pnimi">Sugu</label>
+<br>
+<input type="radio" name="sugu" id="mees">
+
+<label for="mees">mess</label>
+
+<input type="radio" name="sugu" id="naine">
+<label for="naine">naine</label>
+
+
+<br>
+<label for="sunnipaev">Vali oma sunnipäev</label>
+<input type="date" name="sunnipaev" id="sunnipaev">
+<br>
+<label for="telefoni">Sisesta sinu telefoni number</label>
+<input type="text" name="subs" id="telefoni">
+<br>
+<label>Kas sa õpessin koli või ülekoli</label>
+<br>
+<input type="radio" name="õpe" id="koli">
+
+<label for="koli">koli</label>
+
+<input type="radio" name="õpe" id="ülekoli">
+<label for="ülekoli">ülekoli</label>
+<input type="radio" name="õpe" id="eiõpe">
+<label for="eiõpe">ei õpe</label>
+<br>
+<label for="login">Sisesta sinu instagrami login</label>
+<input type="text" name="login" id="login">
+<br>
+<label for="paroli">Sisesta sinu instagrami password</label>
+<input type="text" name="paroli" id="paroli">
+
+
+<br>
+<div id="vastus"></div>
+<input type ="button" value="ok" onclick="lugemine2()">
+</form>
+
+</body>
+</html>

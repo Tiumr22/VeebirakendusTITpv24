@@ -1,0 +1,28 @@
+body{
+    font-family: Amiri, serif;
+   background-color: lightgray;
+
+}
+h1{
+    background-color: lightyellow;
+    border: 3px solid lightyellow;
+    padding: 1px;
+}
+input[type=text],input[type=button]{
+   font-family: Amiri, serif;
+    border: 1px solid darkcyan;
+    padding: 1px;
+    background-color: ghostwhite;
+}
+form {
+    width: 77%;'
+    border: 3px solid gold;
+    border-radius: 3px;'
+    text-align: center;
+    margin-left: 66px;
+    padding: 1px;
+}
+div{
+
+
+}
