@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tymur Veebirakenduste Tööd</title>
+  <link rel="stylesheet" href="Styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    function siniseks(){
+      $('h1').css('color','blue')
+    }
+    function mustaks(){
+      $('h1').css('color','black')
+    }
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("p").hide();
+      });
+      $("#show").click(function(){
+        $("p").show();
+      });
+    });
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+      });
+    });
+    $(document).ready(function(){
+      $("button").click(function(){
+
+        h1.animate({left: '100px'}, "slow");
+
+      function start(){
+        $('h1').mouseenter(siniseks)
+        $('h1').mouseleave(mustaks)
+      }
+
+  </script>
+
+</head>
+<body onload="start()">
+<header>
+  <h1>Tymur veebirakenduste tööde leht</h1>
+    
+
+  <button>move right</button>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">Kodu</a></li>
+    <li><a href="#">Sõnavara</a></li>
+    <li><a href="tehtud_tood.html">Tehtud tööd</a></li>
+    <li><a href="#">Kasulikud lingid</a></li>
+  </ul>
+</nav>
+
+<section class="info">
+  <h2>Info minust...</h2>
+  <p>Ma olen õpilane. Minu hobid on programmeerimine. Ma programmeerin HTML, CSS, JavaScripti ja Python keeles. Ma õpin IT-erialal.</p>
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+</section>
+<div id="flip">Click to slide down panel</div>
+<div id="panel">I like bananas</div>
+
+
+</body>
+</html>
