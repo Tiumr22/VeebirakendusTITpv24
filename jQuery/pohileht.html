@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="style.leht.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script>
+       function punaseks(){
+         $('#tekst').css('color','red')
+       }
+       function siniseks(){
+           $('h1').css('color','blue')
+       }
+       function mustaks(){
+           $('h1, #tekst').css('color','black')
+       }
+       var lahti=true;
+       function naitapeida(){
+     $('#tekst').slideToggle();
+     if(lahti){
+         lahti=false;
+     $('#knopka').val("Näita")
+       }else{
+           lahti=true
+           $('knopka').val("Peida")
+       }
+       }
+
+
+       function start(){
+           $('h1, #tekst').mouseenter(punaseks)
+           $('h1').mouseenter(siniseks)
+           $('h1, #tekst').mouseleave(mustaks)
+           $('#pilt').draggable();
+           $('#tekst').draggable();
+       }
+
+    </script>
+</head>
+<body onload="start()">
+<h1>jQuery kasutamine</h1>
+<div id="tekst">jQuery CDN
+jQuery CDN - jQuery ramatukogu, mis on kätte saadav internetis
+<br>
+jQuery - java Scripti teek,
+mis keskendub Java skripti ja HTML-i vastastikusele mõjule
+</div>
+<input type="button" value="<----" onclick="$('#tekst,h1').animate({left:'0'}, 100)">
+<input type="button" value="---->" onclick="$('#tekst,h1').animate({left:'600px'}, 100)">
+<input type="button" value="peida" id="knopka" onclick="naitapeida()">
+<br>
+<img src="Allalaaditud%20fail.jpg" alt="pudge" id="pilt" width="500px">
+</body>
+</html>
