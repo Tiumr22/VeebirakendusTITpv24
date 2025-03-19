@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vormist lugemine JS abil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vormist lugemine JS abil</h1>
+
+        <form id="userForm">
+            <label for="name">Sisesta nimi</label>
+            <input type="text" id="name" name="name" required>
+            <label for="surname">Sisesta perekonnanimi</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="color">Vali vastuse värv</label>
+            <input type="color" id="color" name="color">
+
+            <p>Vali sugu:</p>
+            <input type="radio" id="male" name="gender" value="mees">
+            <label for="male">Mees</label>
+
+            <input type="radio" id="female" name="gender" value="naine">
+            <label for="female">Naine</label>
+
+            <label for="birthdate">Vali oma sünnipäev</label>
+            <input type="date" id="birthdate" name="birthdate">
+
+            <label for="number">Vali vastuse arv</label>
+            <input type="number" id="number" name="number">
+
+            <label for="email">Kirjuta email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Kirjuta oma mobiili number</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="link">Kirjuta URL</label>
+            <input type="url" id="link" name="link">
+
+            <label for="city">Kus sa elad?</label>
+            <select id="city" name="city">
+                <option value="tartu">Tartu</option>
+                <option value="narva">Narva</option>
+            </select>
+
+            <p>Vali oma hobby:</p>
+            <input type="checkbox" id="football" name="hobby" value="Jalgpall">
+            <label for="football">Jalgpall</label>
+
+            <input type="checkbox" id="drawing" name="hobby" value="Joonistamine">
+            <label for="drawing">Joonistamine</label>
+
+            <input type="checkbox" id="music" name="hobby" value="Muusika">
+            <label for="music">Muusika</label>
+
+            <input type="checkbox" id="cooking" name="hobby" value="Toiduvalmistamine">
+            <label for="cooking">Toiduvalmistamine</label>
+
+            <button type="button" id="hobbyBtn">hobby</button>
+            <button type="submit">OK</button>
+            <div id="output" class="output-box"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
